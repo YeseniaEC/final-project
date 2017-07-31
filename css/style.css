@@ -1,0 +1,108 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css?family=Roboto|Rye');
+
+/*UNIVERSAL STYLES*/
+body {
+  position: relative;
+}
+.img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.base-color {
+  color:
+}
+
+.rye-font {
+  font-family: 'Rye', cursive;
+}
+
+.roboto-font {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  height: 500px;
+}
+
+.flex-column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 500px;
+}
+
+.larger-text {
+  font-size: 64px;
+}
+
+.large-text {
+  font-size: 36px;
+}
+
+.small-text {
+  font-size: 24px;
+}
+
+.smaller-text {
+  font-size: 16px;
+}
+
+.black-text {
+  color: black;
+}
+/*NAVIGATION BAR STYLING*/
+.navbar--bg {
+  background-color: pink;
+  border: none;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
+  color: black;
+}
+
+ /*HERO SECTION STYLING*/
+.hero-section {
+  background-image: url(https://static.pexels.com/photos/158743/mock-up-linen-paper-flower-sackcloth-158743.jpeg);
+  height: 700px;
+  /*background-size: cover;
+  background-attachment: fixed;*/
+}
+.hero-bg {
+  background-color: rgba(255, 192, 203, 0.75);
+  border-radius: 10px;
+}
+
+.pitch--bg-fixed {
+  background-image: url(https://static.pexels.com/photos/354587/pexels-photo-354587.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 450px;
+}
+
+.skills--bg-img {
+  background-color: pink;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+
+
+ /*PROGRESS BAR SECTION STYLING*/
+
+ /*FOOTER*/
+.footer-bg {
+ background-color: black;
+ color: white;
+}
+.social-media-i {
+  color: white;
+  margin: 5px;
+}
