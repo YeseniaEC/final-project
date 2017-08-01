@@ -1,0 +1,11 @@
+
+.footer-bg-color {
+  background-color: black;
+  color: white;
+}
+
+.footer-bg-color i {
+  margin: 15px;
+  text-decoration: none;
+  color: white;
+}
