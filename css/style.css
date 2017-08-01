@@ -98,11 +98,22 @@ a {
  /*PROGRESS BAR SECTION STYLING*/
 
  /*FOOTER*/
-.footer-bg {
+/*.footer-bg {
  background-color: black;
  color: white;
 }
 .social-media-i {
   color: white;
   margin: 5px;
+}*/
+
+.footer-bg-color {
+  background-color: black;
+  color: white;
+}
+
+.footer-bg-color i {
+  margin: 15px;
+  text-decoration: none;
+  color: white;
 }
