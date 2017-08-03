@@ -13,7 +13,7 @@
 <body data-spy="scroll" data-target="#navbar-example">
 
   <!--NAVIGATION SECTION-->
-  <nav class="navbar navbar-default navbar-fixed-top navbar--bg rye-font" id="navbar-example">
+  <nav class="navbar navbar-default navbar-fixed-top merienda-font" id="navbar-example">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -29,17 +29,16 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#pitch">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Pet Store</a></li>
-              <li><a href="#">Restaurante</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#petstore">Pet Store</a></li>
+              <li><a href="#restaurante">Restaurante</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">More Coming Soon</a></li>
             </ul>
           </li>
         </ul>
@@ -48,45 +47,56 @@
   </nav> <!--END OF NAVBAR-->
 
   <!--HERO SECTION OF PORTFOLIO-->
-  <div class="container-fluid image-position">
+  <div class="container-fluid image-position white-text">
     <div class="row">
       <div class="col-sm-12 hero-section img flex">
-        <div class="col-sm-5 col-sm-offset-4 hero-bg hero-text">
-          <h1 class="rye-font larger-text">My Portfolio</h1>
-          <p class="roboto-font large-text"> ... </p>
+        <div class="col-sm-6 col-sm-offset-3 hero-bg text-center">
+          <h1 class="merienda-font larger-text">Hi! I'm Yesenia</h1>
+          <p class="quicksand-font large-text">Welcome to my Portfolio</p>
         </div>
       </div>
     </div>
   </div>
 
 <!--PITCH  MAKE THE TEXT INSIDE BE CENTERED AND USE FLEX IF POSSIBLE-->
-  <div class="container-fluid">
-    <div class="row pitch--bg-fixed flex-column">
+  <div class="container-fluid" id="pitch">
+    <div class="pitch--bg-fixed base-color flex-column">
       <div class="col-sm-8 col-sm-offset-2">
-        <h1 class="large-text text-center">Yesenia</h1>
-        <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam fugit nam nisi earum sed facere perspiciatis alias, similique ab! Dicta tempore temporibus esse, itaque impedit quis dignissimos commodi, quibusdam quos.</p>
+        <h1 class="large-text text-center merienda-font">About</h1>
+        <p class="small-text text-center quicksand-font">
+          "She believed she could, so she did." by R.S. Grey
+        </p>
+        <p class="smaller-text quicksand-font">I have always been curious about how things work. Curiosity came after working with electronics and seeing the power that programming had. I was inspired to seek out help to learn to make my own projects. I try to take setbacks in life as challenges and continue to learn and grow. I am an entry level developer, looking to find my way in life.</p>
       </div>
     </div>
   </div>
 
 <!-- Progress Bars- MAKE THEM DIFFERENT COLORS OR DESIGN THEM SO THEY ARENT SO BORING LOOKING OR LOOK INTO DIFFERENT DESIGNS ON CODEPEN-->
-  <div class="container-fluid skills--bg-img flex-column">
+  <div class="container-fluid skills--bg-img flex-column white-text" id="skills">
     <div class="row">
-      <div class="col-sm-4 col-sm-offset-2">
-        <div class="large-text">My Skills</div>
+      <div class="col-sm-5 col-sm-offset-1 skills-bg img">
+        <div class="large-text merienda-font">
+          <h1>My Skills</h1>
+        </div>
       </div>
-      <div class="col-sm-5">
+      <div class="col-sm-5 quicksand-font">
         <div>  <!--PROGRESS BARS DIV START-->
-          <h4>HTML and CSS</h4>
+          <h4>HTML5</h4>
           <div class="progress">
-          <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">Loading...
-            <span class="sr-only"> HTML and CSS 60% Complete</span>
+          <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">Loading...
+            <span class="sr-only">70% Complete</span>
+          </div>
+          </div>
+          <h4>CSS</h4>
+          <div class="progress">
+          <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">Loading...
+            <span class="sr-only">45% Complete</span>
           </div>
           </div>
           <h4>Bootstrap 3</h4>
           <div class="progress">
-          <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%">Loading...
-            <span class="sr-only">35% Complete</span>
+          <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 25%">Loading...
+            <span class="sr-only">25% Complete (danger)</span>
           </div>
           </div>
           <h4>Javascript</h4>
@@ -95,27 +105,67 @@
             <span class="sr-only">Loading...</span>
           </div>
           </div>
-          <h4>Ability to Learn</h4>
-          <div class="progress">
-          <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100% Complete
-            <span class="sr-only">100% Complete (danger)</span>
-          </div>
-          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECTS SECTION -->
+
+  <div class="container-fluid project-bg merienda-font text-center">
+    <div class="container">
+      <div class="row flex">
+        <div class="col-sm-4 column pet-bg">
+          <h1> Pet Store Project</h1>
+          <button><a href="#"> View</a></button>
+        </div>
+        <div class="col-sm-4 column res-bg">
+          <h1> Restaurante Project</h1>
+          <button><a href="#"> View</a></button>
+        </div>
+        <div class="col-sm-4 column more-bg">
+          <h1> More Coming Soon...</h1>
         </div>
       </div>
     </div>
   </div>
 
 
-<!-- COntact Me Section -->
-  <!-- <div class="container-fluid">
+<!-- CONTACT FORM -->
+  <div class="container-fluid" id="contact">
     <div class="row">
-      <h1 class="col-sm-2 col-sm-offset-1 roboto-font text-center">CONTACT ME</h1>
-    </div>
-  </div> -->
+      <div class="col-sm-5 col-sm-offset-1 form">
+        <form class="quicksand-font">
+          <div class="form-group">
+            <label for="exampleInputName1"> Name</label>
+            <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+          </div>
+          <div>
+            <label for="exampleInputText">Message</label>
+            <textarea class="form-control" placeholder="Message" rows="4"></textarea>
+          </div>
+          <div class="checkbox">
+          <label>
+            <input type="checkbox"> I'm not a robot...
+          </label>
+          </div>
+          <button type="submit" class="btn btn-default text-center">Submit</button>
+        </form>
+      </div>
+      <h1 class="col-sm-4 merienda-font text-center flex-column">CONTACT ME</h1>
 
+    </div>
+  </div>
+
+
+
+<!-- FOOTER SECTION WITH SOCIAL MEDIA -->
   <footer class="container-fluid footer-bg-color flex-column">
-    <div class="col-sm-12 text-center large-text">Where to Reach Me.</div>
+    <div class="col-sm-12 text-center large-text merienda-font">Where to Reach Me.</div>
       <div class="col-sm-12 text-center">
         <div>
           <a href="https://github.com/YeseniaEC"><i class="fa fa-github-alt fa-3x" aria-hidden="true"></i></a>

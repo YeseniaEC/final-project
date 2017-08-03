@@ -1,25 +1,36 @@
 /*FONTS*/
-@import url('https://fonts.googleapis.com/css?family=Roboto|Rye');
-
+@import url('https://fonts.googleapis.com/css?family=Merienda+One|Quicksand:400,500');
 /*UNIVERSAL STYLES*/
 body {
   position: relative;
 }
-.img {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.base-color {
-  color:
+
+.base-color {  /* Light blue grey */
+  color: #95ACC5;
 }
 
-.rye-font {
-  font-family: 'Rye', cursive;
+.accent-color-blue {  /*lighter blue*/
+  color: #054674;
 }
 
-.roboto-font {
-  font-family: 'Roboto', sans-serif;
+.accent-color-purple { /*Dark purple*/
+  color: #2C2538;
+}
+
+.accent-color-navy {  /*Navy dark blue*/
+  color: #001129;
+}
+
+.accent-color-teal { /*Darker blue green*/
+  color: #013F5B;
+}
+
+.merienda-font {
+  font-family: 'Merienda One', cursive;
+}
+
+.quicksand-font {
+  font-family: 'Quicksand', sans-serif;
 }
 
 a {
@@ -37,6 +48,12 @@ a {
   justify-content: center;
   flex-direction: column;
   height: 500px;
+}
+
+.img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .larger-text {
@@ -58,46 +75,104 @@ a {
 .black-text {
   color: black;
 }
-/*NAVIGATION BAR STYLING*/
-.navbar--bg {
-  background-color: pink;
-  border: none;
-}
 
-.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
-  color: black;
+.white-text {
+  color: white;
+}
+/*NAVIGATION BAR STYLING*/
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a, .navbar-default {
+  color: white;
+  border: none;
 }
 
  /*HERO SECTION STYLING*/
 .hero-section {
-  background-image: url(https://static.pexels.com/photos/158743/mock-up-linen-paper-flower-sackcloth-158743.jpeg);
+  background-image: url(../img/hero.jpeg);
   height: 700px;
-  /*background-size: cover;
-  background-attachment: fixed;*/
+  background-attachment: fixed;
+  text-shadow: 3px 1px #001129;
 }
-.hero-bg {
+
+/*.hero-section {
+  background: #B993D6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 700px;
+}*/
+
+ .hero-bg {
   background-color: rgba(255, 192, 203, 0.75);
   border-radius: 10px;
 }
 
 .pitch--bg-fixed {
-  background-image: url(https://static.pexels.com/photos/354587/pexels-photo-354587.jpeg);
+  /*background-image: url(https://static.pexels.com/photos/354587/pexels-photo-354587.jpeg);*/
   background-size: cover;
   background-attachment: fixed;
   height: 450px;
+  text-align: justify;
+}
+
+.pitch--bg-fixed p {
+  margin: 25px;
+  line-height: 50px;
 }
 
 .skills--bg-img {
-  background-color: pink;
+  background-color: #013F5B ;
   background-size: cover;
   background-attachment: fixed;
   height: 500px;
 }
 
+.skills-bg {
+  background-image: url(../img/skills.jpeg);
+  height: 300px;
+}
 
- /*PROGRESS BAR SECTION STYLING*/
+
+/*PROJECT STYLES*/
+
+.project-bg {
+  background-color: #95ACC5;
+  height: 500px;
+}
+
+.column {
+  height: 350px;
+}
+
+.pet-bg {
+  background-image: url();
+  border: 1px solid #054674;
+}
+
+.res-bg {
+  background-image: url();
+  border: 1px solid #054674;
+}
+
+.more-bg {
+  background-image: url();
+  border: 1px solid #054674;
+  display: flex;
+  align-items: center;
+  height: 350px;
+}
+ /*CONTACT FORM STYLE*/
+
+ .form {
+   background-color: lightblue;
+   border: 2px dotted white;
+   padding: 35px;
+   margin-top: 40px;
+   margin-bottom: 40px;
+ }
+
 
  /*FOOTER*/
+
 /*.footer-bg {
  background-color: black;
  color: white;
@@ -116,4 +191,45 @@ a {
   margin: 15px;
   text-decoration: none;
   color: white;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  #navbar-example {
+    background-color: transparent;
+  }
+}
+
+/*-----------------------------------
+CHANGES THE FOOTER BG AND FORM COLOR
+------------------------------------*/
+
+@media screen and (max-width: 768px) {
+  .footer-bg-color  {
+    font-size: 42px;
+    background-color: pink;
+    color: black;
+    font-weight: bold;
+  }
+  .form {
+    background-color: violet;
+  }
+}
+
+/*----------------------------------------
+CHANGES THE HERO SECTION TEXT SIZE & COLOR
+----------------------------------------*/
+@media screen and (max-width: 768px) {
+  .hero-section {
+    background-image: url(https://static.pexels.com/photos/311458/pexels-photo-311458.jpeg);
+  }
+  .hero-section h1 {
+    font-size: 55px;
+  }
+  .hero-section p {
+    font-size: 50px;
+  }
 }
