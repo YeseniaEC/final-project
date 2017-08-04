@@ -144,17 +144,18 @@ a {
 }
 
 .pet-bg {
-  background-image: url();
+  background-image: url(../img/petstore-img.jpg);
   border: 1px solid #054674;
 }
 
 .res-bg {
-  background-image: url();
+  background-image: url(../img/restaurant-2.jpg);
   border: 1px solid #054674;
+  color: white;
 }
 
 .more-bg {
-  background-image: url();
+  background-image: url(https://static.pexels.com/photos/316466/pexels-photo-316466.jpeg);
   border: 1px solid #054674;
   display: flex;
   align-items: center;
@@ -163,13 +164,17 @@ a {
  /*CONTACT FORM STYLE*/
 
  .form {
-   background-color: lightblue;
+   background-color: #001129;
    border: 2px dotted white;
    padding: 35px;
    margin-top: 40px;
    margin-bottom: 40px;
  }
 
+.contact-img {
+  background-image: url(../img/email.jpeg);
+  height: 425px;
+}
 
  /*FOOTER*/
 
@@ -210,21 +215,47 @@ CHANGES THE FOOTER BG AND FORM COLOR
 @media screen and (max-width: 768px) {
   .footer-bg-color  {
     font-size: 42px;
-    background-color: pink;
-    color: black;
+    background-color: black;
+    color: white;
     font-weight: bold;
   }
   .form {
-    background-color: violet;
+    background-color: #95ACC5;
+    color: black;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .skills--bg-img {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .responsive-prj {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 900px;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .project-bg {
+    height: 1000px;
+  }
+}
+
+
 
 /*----------------------------------------
 CHANGES THE HERO SECTION TEXT SIZE & COLOR
 ----------------------------------------*/
 @media screen and (max-width: 768px) {
+  .navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a, .navbar-default {
+    color: black;
+  }
   .hero-section {
-    background-image: url(https://static.pexels.com/photos/311458/pexels-photo-311458.jpeg);
+    background-image: url(../img/mountain.jpeg);
   }
   .hero-section h1 {
     font-size: 55px;
