@@ -79,6 +79,7 @@ a {
 .white-text {
   color: white;
 }
+
 /*NAVIGATION BAR STYLING*/
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a, .navbar-default {
@@ -94,15 +95,8 @@ a {
   text-shadow: 3px 1px #001129;
 }
 
-/*.hero-section {
-  background: #B993D6;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 700px;
-}*/
-
  .hero-bg {
-  background-color: rgba(255, 192, 203, 0.75);
+  background-color: rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
 
@@ -136,11 +130,12 @@ a {
 
 .project-bg {
   background-color: #95ACC5;
-  height: 500px;
+  height: 600px;
 }
 
 .column {
   height: 350px;
+  margin-bottom: 25px;
 }
 
 .pet-bg {
@@ -151,25 +146,31 @@ a {
 .res-bg {
   background-image: url(../img/restaurant-2.jpg);
   border: 1px solid #054674;
-  color: white;
+  color: #95ACC5 ;
 }
 
 .more-bg {
-  background-image: url(https://static.pexels.com/photos/316466/pexels-photo-316466.jpeg);
+  background-image: url(../img/pencil.jpeg);
   border: 1px solid #054674;
   display: flex;
   align-items: center;
   height: 350px;
 }
+
+
  /*CONTACT FORM STYLE*/
 
  .form {
-   background-color: #001129;
+   background-color: #95ACC5;
    border: 2px dotted white;
    padding: 35px;
    margin-top: 40px;
    margin-bottom: 40px;
  }
+
+.form-bg {
+  background-image: url(../img/sky.jpg);
+}
 
 .contact-img {
   background-image: url(../img/email.jpeg);
@@ -178,14 +179,6 @@ a {
 
  /*FOOTER*/
 
-/*.footer-bg {
- background-color: black;
- color: white;
-}
-.social-media-i {
-  color: white;
-  margin: 5px;
-}*/
 
 .footer-bg-color {
   background-color: black;
@@ -213,21 +206,25 @@ CHANGES THE FOOTER BG AND FORM COLOR
 ------------------------------------*/
 
 @media screen and (max-width: 768px) {
-  .footer-bg-color  {
+  .footer-bg-color, .footer-bg-color h1  {
     font-size: 42px;
-    background-color: black;
+    background-color:#013F5B;
     color: white;
     font-weight: bold;
   }
   .form {
-    background-color: #95ACC5;
+    background-color: white;
     color: black;
+    margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 768px) {
   .skills--bg-img {
     height: auto;
+  }
+  .skills-bg {
+    display: none;
   }
 }
 
@@ -243,6 +240,9 @@ CHANGES THE FOOTER BG AND FORM COLOR
   .project-bg {
     height: 1000px;
   }
+  .pitch--bg-fixed {
+    height: auto;
+  }
 }
 
 
@@ -256,11 +256,13 @@ CHANGES THE HERO SECTION TEXT SIZE & COLOR
   }
   .hero-section {
     background-image: url(../img/mountain.jpeg);
+    display: flex;
+    justify-content: center;
   }
   .hero-section h1 {
-    font-size: 55px;
+    font-size: 50px;
   }
   .hero-section p {
-    font-size: 50px;
+    font-size: 45px;
   }
 }
