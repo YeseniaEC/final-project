@@ -101,9 +101,6 @@ a {
 }
 
 .pitch--bg-fixed {
-  /*background-image: url(https://static.pexels.com/photos/354587/pexels-photo-354587.jpeg);*/
-  background-size: cover;
-  background-attachment: fixed;
   height: 450px;
   text-align: justify;
 }
@@ -114,7 +111,7 @@ a {
 }
 
 .skills--bg-img {
-  background-color: #013F5B ;
+  background-color: #013F5B;
   background-size: cover;
   background-attachment: fixed;
   height: 500px;
@@ -122,7 +119,7 @@ a {
 
 .skills-bg {
   background-image: url(../img/skills.jpeg);
-  height: 300px;
+  height: 350px;
 }
 
 
@@ -131,6 +128,10 @@ a {
 .project-bg {
   background-color: #95ACC5;
   height: 600px;
+}
+
+.project-bg h1 {
+  margin-top: 50px;
 }
 
 .column {
@@ -152,8 +153,6 @@ a {
 .more-bg {
   background-image: url(../img/pencil.jpeg);
   border: 1px solid #054674;
-  display: flex;
-  align-items: center;
   height: 350px;
 }
 
