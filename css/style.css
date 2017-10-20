@@ -160,11 +160,18 @@ a {
  /*CONTACT FORM STYLE*/
 
  .form {
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+
+ }
+ iframe{
    background-color: #95ACC5;
    border: 2px dotted white;
    padding: 35px;
-   margin-top: 40px;
-   margin-bottom: 40px;
+   margin: 40px 0px;
+   height: 570px;
+   width: 700px;
  }
 
 .form-bg {
