@@ -139,6 +139,19 @@ a {
   height: 350px;
 }
 
+.fox {
+  background-image: url(../img/Fox.png);
+  height: 350px;
+}
+.elephant {
+  background-image: url(../img/Elephant.png);
+  height: 350px;
+}
+.giraffe {
+  background-image: url(../img/Giraffe.png);
+  height: 350px;
+}
+
 .img>button {
   margin-top: 100px;
 }
@@ -209,6 +222,16 @@ CHANGES THE FOOTER BG AND FORM COLOR
     /* background-color: white; */
     color: black;
     margin: 0 auto;
+  }
+  .fox,
+  .giraffe,
+  .elephant {
+    width: 200px;
+    margin: 0 auto;
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
   }
 }
 
